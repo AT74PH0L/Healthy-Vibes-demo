@@ -1,0 +1,30 @@
+span {
+  color: #4caf4f;
+}
+
+.calorie-container {
+  background-image: url("https://cdn.tatlerasia.com/tatlerasia/i/2024/12/07190333-gettyimages-1392660302_cover_1600x1067.jpg");
+  background-size: cover; /* ปรับขนาดภาพให้เต็มพื้นที่ */
+  background-position: center; /* จัดกึ่งกลางภาพ */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+  padding: 6rem; /* เพิ่ม padding รอบๆ กล่อง */
+  /* border-radius: 0.5rem;        ปรับขอบให้กลมมน */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: #fff; /* ตั้งสีข้อความเป็นสีขาว (หากต้องการให้เห็นชัดบนพื้นหลัง) */
+}
+
+.btn-custom {
+  background-color: #4caf4f;
+}
+
+.calculator-form {
+  /* max-width: 600px; */
+  margin: auto;
+}
+
+.gender-toggle .btn {
+  width: 100px;
+}

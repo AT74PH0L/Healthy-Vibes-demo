@@ -13,6 +13,7 @@ const NavigationBar = () => {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/articles">บทความสุขภาพ</Nav.Link>
+            <Nav.Link as={Link} to="/CalorieCalculator">คํานวณแคลอรี่</Nav.Link>
             <Button variant="success" className="ms-3 Sign-btn">Sign Up</Button>
           </Nav>
         </Navbar.Collapse>
