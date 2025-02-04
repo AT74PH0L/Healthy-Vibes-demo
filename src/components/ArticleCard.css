@@ -1,0 +1,12 @@
+/* ArticleCard.css */
+.article-card {
+    max-width: 300px;
+  }
+  
+  .article-img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .read{
+    color: #4CAF4F;
+  }

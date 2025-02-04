@@ -1,0 +1,11 @@
+.display-4{ 
+    font-weight: bold;
+}
+
+span {
+    color: #4CAF4F;
+}
+
+.btn-custom{
+    background-color: #4CAF4F;
+}
