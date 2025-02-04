@@ -23,10 +23,9 @@ const CalorieCalculator = () => {
   const updateFoodCount = (food, change) => {
     setSelectedFoods((prev) => {
       const newCount = (prev[food.name] || 0) + change;
-      // if (newCount <= 0) {
-      //   const { [food.name]: _, ...rest } = prev;
-      //   return rest; // ลบออกถ้าจำนวนเป็น 0
-      // }
+      if (newCount < 0) {
+        return prev; 
+      }
       return { ...prev, [food.name]: newCount };
     });
   };
