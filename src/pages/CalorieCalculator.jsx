@@ -164,8 +164,8 @@ const CalorieCalculator = () => {
 
               {bmr && tdee && (
                 <div className="result mt-4 text-center">
-                  <h4>BMR: {bmr} kcal</h4>
-                  <h4>TDEE: {tdee} kcal</h4>
+                  <h4>BMR(แคลอรี่ที่ควรจะได้รับในแต่ละวัน): {bmr} kcal</h4>
+                  <h4>TDEE(การใช้พลังงานทั้งหมดต่อวัน): {tdee} kcal</h4>
                 </div>
               )}
               <div className="mt-4 p-4 bg-light rounded">

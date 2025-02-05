@@ -23,11 +23,7 @@ const Home = () => {
           className="w-25 h-auto rounded"
         />
       </div>
-
-      <div className="mt-4 ">
-        <h5 className="fw-bold">บทความสำหรับคนรักสุขภาพ</h5>
-      </div>
-      <ArticleCard limit={4}/>
+      <ArticleCard limit={4} />
     </>
   );
 };
