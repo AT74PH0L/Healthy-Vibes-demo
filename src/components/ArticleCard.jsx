@@ -1,21 +1,14 @@
-import './ArticleCard.css'; // อย่าลืม import CSS
+import PropTypes from "prop-types";
+import "./ArticleCard.css";
+import articles from "../data/Demo_data";
 
-const ArticleCard = () => {
-  const articles = [
-    { id: 1, title: "ร้านอาหารเพื่อสุขภาพ", img: "https://www.matichon.co.th/wp-content/uploads/2018/11/fit-and-firm-salad.jpg" },
-    { id: 2, title: "วิธีการออกกำลังกาย", img: "https://www.matichon.co.th/wp-content/uploads/2018/11/fit-and-firm-salad.jpg" },
-    { id: 3, title: "สถานการณ์โรคระบาดปัจจุบัน", img: "https://www.matichon.co.th/wp-content/uploads/2018/11/fit-and-firm-salad.jpg" },
-    { id: 4, title: "วิธีดูแลสุขภาพ", img: "https://www.matichon.co.th/wp-content/uploads/2018/11/fit-and-firm-salad.jpg" },
-  ];
+const ArticleCard = ({ limit }) => {
+  const displayedArticles = limit ? articles.slice(0, limit) : articles;
 
   return (
     <div className="container">
-      <div className="mt-4">
-        <h5 className="fw-bold">บทความสำหรับคนรักสุขภาพ</h5>
-      </div>
-
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
-        {articles.map((article) => (
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center mt-2">
+        {displayedArticles.map((article) => (
           <div key={article.id} className="col d-flex justify-content-center">
             <div className="card shadow-sm border-light rounded-lg article-card">
               <img
@@ -25,7 +18,10 @@ const ArticleCard = () => {
               />
               <div className="card-body">
                 <h5 className="card-title text-dark">{article.title}</h5>
-                <a href={`/articles/${article.id}`} className="btn btn-outline-success mt-2 read">
+                <a
+                  href={`/articles/${article.id}`}
+                  className="btn btn-outline-success mt-2 read"
+                >
                   อ่านเพิ่มเติม →
                 </a>
               </div>
@@ -35,6 +31,10 @@ const ArticleCard = () => {
       </div>
     </div>
   );
+};
+
+ArticleCard.propTypes = {
+  limit: PropTypes.number,
 };
 
 export default ArticleCard;
