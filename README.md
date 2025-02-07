@@ -1,8 +1,44 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏥 Healthy-Vibes
+This project is a Frontend for a health blog website featuring tools to calculate BMR, TDEE, and food calorie intake. Developed with React + Vite, it is part of a university project.
 
-Currently, two official plugins are available:
+## 🎯 Features
+📖 Health Articles – A collection of informative content on nutrition and wellness.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔢 BMR & TDEE Calculator – Calculates the daily energy expenditure required by the body.
+
+🍽️ Food Calorie Calculator – Estimates calorie intake based on consumed food.
+
+🚀 Project Status
+This project is for educational purposes only and does not include a Backend or database system.
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/AT74PH0L/Healthy-Vibes-demo.git
+```
+
+Go to the project directory
+
+```bash
+  cd Healthy-Vibes-demo
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## 🛠️ Tech Stack  
+- **Frontend:** [Vite](https://vite.dev/) , [React (JSX)](https://react.dev/)
+- **UI Framework:** [Bootstrap](https://getbootstrap.com/)  
